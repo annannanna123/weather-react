@@ -16,8 +16,8 @@ export default function Weather(props) {
   return (
     <ColorRing
       visible={true}
-      height="80"
-      width="80"
+      height="60"
+      width="60"
       ariaLabel="blocks-loading"
       wrapperStyle={{}}
       wrapperClass="blocks-wrapper"
