@@ -20,6 +20,7 @@ export default function CurrentWeather(props) {
 
   return (
     <div className="CurrentWeather">
+      <h2>{props.city}</h2>
       <li>Temperature: {Math.round(weather.temperature)}°C</li>
       <li>Description: {weather.description}</li>
       <li>Humidity: {weather.humidity}%</li>
