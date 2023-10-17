@@ -11,7 +11,10 @@ function App() {
         <Search />
       </header>
       <footer>
-        <a href="https://github.com/annannanna123/weather-react">
+        <a
+          href="https://github.com/annannanna123/weather-react"
+          target="blank_"
+        >
           Open-source code
         </a>{" "}
         by Anna Chu
