@@ -1,0 +1,47 @@
+.CurrentWeather h1 {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 29px;
+  margin: 20px 0 0 0;
+}
+
+.CurrentWeather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.CurrentWeather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+
+.CurrentWeather .weather-display {
+  margin-top: 20px;
+}
+
+.CurrentWeather img {
+  display: inline-block;
+  height: 64px;
+  margin-right: 10px;
+  width: 64px;
+}
+
+.CurrentWeather .temperature {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+.CurrentWeather .unit {
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  top: -15px;
+}
