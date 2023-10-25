@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
+import { ColorRing } from "react-loader-spinner";
 
 import "./CurrentWeather.css";
 
@@ -61,7 +63,9 @@ export default function CurrentWeather(props) {
         </form>
         <h1>{weather.city}</h1>
         <ul>
-          <li>Wednesday 07:00</li>
+          <li>
+            <FormattedDate date={weather.date} />
+          </li>
           <li className="text-capitalize">{weather.description}</li>
         </ul>
         <div className="row weather-display">
@@ -83,6 +87,19 @@ export default function CurrentWeather(props) {
     );
   } else {
     search();
-    <h2>Loading...</h2>;
+    return (
+      <div>
+        <h2>Loading...</h2>
+        <ColorRing
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="blocks-loading"
+          wrapperStyle={{}}
+          wrapperClass="blocks-wrapper"
+          colors={["#ef767a", "#456990", "#49beaa", "#49dcb1", "#eeb868"]}
+        />
+      </div>
+    );
   }
 }
