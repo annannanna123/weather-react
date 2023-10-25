@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
+import Temperature from "./Temperature";
 import { ColorRing } from "react-loader-spinner";
 
 import "./CurrentWeather.css";
@@ -71,10 +72,7 @@ export default function CurrentWeather(props) {
         <div className="row weather-display">
           <div className="col-6">
             <img src={weather.icon} alt={weather.description} />
-            <span className="temperature">
-              {Math.round(weather.temperature)}
-            </span>
-            <span className="unit">°C</span>
+            <Temperature temperature={weather.temperature} />
           </div>
           <div className="col-6">
             <ul>
