@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./DailyForecast.css";
+
 export default function DailyForecast(props) {
   function day() {
     let date = new Date(props.data.dt * 1000);
@@ -28,7 +30,7 @@ export default function DailyForecast(props) {
   return (
     <div className="DailyForecast">
       <div className="DailyForecast-day">{day()}</div>
-      <img src={icon} alt={props.data.weather[0].description} />
+      <img src={icon()} alt={props.data.weather[0].description} />
       <div className="DailyForecast-temperatures">
         <span className="DailyForecast-temperature-max">
           {maxTemperature()}
